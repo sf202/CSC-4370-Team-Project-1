@@ -1,0 +1,113 @@
+body {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-bar {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    left:0px;
+    top: 0px;
+    color: white;
+    text-align: center;
+    font-size: 45px;  
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.main-menu-container {
+    width: 450px;
+    height: 150px;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 200px;
+    left:400px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    display: block;
+
+}
+
+li {
+    display: block;
+    width: 450px;
+    height: 50px;
+}
+
+li a {
+    display: block;
+    width: 400px;
+    height: 50px;
+}
+
+.button:hover {
+    display: block;
+    width: 450px;
+    height: 50px;
+    background-color: black;
+}
+
+.button {
+    background-color: gray;
+    text-align: center;
+    display: block;
+    font-size: 30pt;
+    cursor: pointer;
+    width: 450px;
+    color: white;
+    border: none;
+}
+
+.howToPlay-text-container {
+    width: 450px;
+    height: 50px;
+    position: fixed;
+    top: 80px;
+    left: 400px;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 5px;
+    color: red;
+    font-size: 18pt;
+}
+
+.howToPlay-container {
+    width: 450px;
+    height: 210px;
+    background-color: black;
+    position: fixed;
+    top: 180px;
+    left:400px;
+    border: 5px solid red;
+    font-family: sans-serif;
+    color:white;
+}
+
+p {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12pt;
+}
+
+.backToMenu-btn {
+    text-align: center;
+    display: block;
+    font-size: 25pt;
+    cursor: pointer;
+    width: 450px;
+    color: white;
+    border: none;
+    position: fixed;
+    top: 410px;
+    left: 403px;
+}
+
+a:visited {
+    color: white;
+}

@@ -1,0 +1,1107 @@
+body{ 
+	counter-reset: score; 
+}
+
+html{
+    height:100%;
+}
+
+
+
+/* IMAGE STYLES */
+	[type=radio] + img{
+		cursor: pointer;
+		animation:moveDiagonal 5s linear infinite;
+	}
+  
+  /* CHECKED STYLES */
+	[type=radio]:checked + img{
+    opacity:0;
+	counter-increment: score;
+	}
+  
+  
+.radio_pieces{
+	position:relative; 
+	display:inline-block;
+}
+
+.radio_pieces .body{
+	img {
+    height: 100px;
+	}
+ }
+
+.radio_pieces .body ::before{
+margin:auto;
+}
+
+.radio_pieces [type=radio] { 
+    position: absolute;
+    opacity:0;
+    width: 100px;
+    height: 100px;
+  }
+  
+
+  
+
+	
+
+
+
+.radio_pieces input[type=radio]:checked ~
+    .body{
+		img {
+			opacity:0;
+		}
+	}
+
+.sum{
+	position: absolute;
+	left: 50%; 
+	top: 0; 
+	transform: translateX(-50%);
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+	background-color: lightblue;
+	border: 2px solid darkgray;
+	border-radius: 5px;;
+}
+
+.sum::before{
+	content:"score:" counter(score) "/45";
+}
+	
+/*timer */
+
+.count-down {
+	
+	border: 3px solid green;
+	background-color: lightblue;
+	position: absolute;
+	left: 50%; /* Horizontal center */
+	bottom: 0; /* Align to the bottom of the screen */
+	transform: translateX(-50%); /* Center horizontally */
+	font-size:40px; 
+	font-weight:bold;
+	
+	
+	.count {
+		
+		&::before {
+			content: " ";
+			animation: countdown 30s step-end 1 forwards;
+		
+		}
+	}
+}
+    
+ 
+
+
+@keyframes countdown {
+	
+	0% { content: "30" }
+    3.33% { content: "29" }
+    6.67% { content: "28" }
+    10% { content: "27" }
+    13.33% { content: "26" }
+    16.67% { content: "25" }
+    20% { content: "24" }
+    23.33% { content: "23" }
+    26.67% { content: "22" }
+    30% { content: "21" }
+    33.33% { content: "20" }
+    36.67% { content: "19" }
+    40% { content: "18" }
+    43.33% { content: "17" }
+    46.67% { content: "16" }
+    50% { content: "15" }
+    53.33% { content: "14" }
+    56.67% { content: "13" }
+    60% { content: "12" }
+    63.33% { content: "11" }
+    66.67% { content: "10" }
+    70% { content: "09" }
+    73.33% { content: "08" }
+    76.67% { content: "07" }
+    80% { content: "06" }
+    83.33% { content: "05" }
+    86.67% { content: "04" }
+    90% { content: "03" }
+    93.33% { content: "02" }
+    96.67% { content: "01" }
+    100% { content: "00" }
+ 
+
+}
+
+
+.diagonal-move1{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal1 10s linear;
+  animation-delay: 40s;
+}
+.diagonal-move2{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal2 10s linear;
+  animation-delay: 2s;
+}
+.diagonal-move3{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal3 10s linear;
+  animation-delay: 4s;
+}
+.diagonal-move4{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal4 10s linear;
+  animation-delay: 6s;
+}
+.diagonal-move5{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal5 10s linear;
+  animation-delay: 8s;
+}
+.diagonal-move6{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal6 10s linear;
+  animation-delay: 10s;
+}
+.diagonal-move7{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal7 10s linear;
+  animation-delay: 11s;
+}
+.diagonal-move8{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal8 10s linear;
+  animation-delay: 12s;
+}
+.diagonal-move9{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal9 10s linear;
+  animation-delay: 13s;
+}
+.diagonal-move10{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal10 10s linear;
+  animation-delay: 14s;
+}
+.diagonal-move11{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal1 9.5s linear;
+  animation-delay:15s
+}
+.diagonal-move12{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal2 9.5s linear;
+  animation-delay: 17s;
+}
+.diagonal-move13{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal3 9.5s linear;
+  animation-delay: 19s;
+}
+.diagonal-move14{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal4 9.5s linear;
+  animation-delay: 20s;
+}
+.diagonal-move15{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal5 9.5s linear;
+  animation-delay: 22s;
+}
+.diagonal-move16{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal6 9.5s linear;
+  animation-delay: 23s;
+}
+.diagonal-move17{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal7 9.5s linear;
+  animation-delay: 25s;
+}
+.diagonal-move18{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal8 9.5s linear;
+  animation-delay: 27s;
+}
+.diagonal-move19{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal9 9.5s linear;
+  animation-delay: 28s;
+}
+.diagonal-move20{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal10 9.5s linear;
+  animation-delay: 28.5s;
+}
+.diagonal-move21{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal1 9s linear;
+  animation-delay:29s
+}
+.diagonal-move22{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal2 9s linear;
+  animation-delay: 29.5s;
+}
+.diagonal-move23{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal3 9s linear;
+  animation-delay: 30s;
+}
+.diagonal-move24{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal4 9s linear;
+  animation-delay: 30.5s;
+}
+.diagonal-move25{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal5 9s linear;
+  animation-delay: 31s;
+}
+.diagonal-move26{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal6 9s linear;
+  animation-delay: 32s;
+}
+.diagonal-move27{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal7 9s linear;
+  animation-delay: 32.5s;
+}
+.diagonal-move28{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal8 9s linear;
+  animation-delay: 32.5s;
+}
+.diagonal-move29{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal9 9s linear;
+  animation-delay: 33s;
+}
+.diagonal-move30{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal10 8.7s linear;
+  animation-delay: 33.5s;
+}
+.diagonal-move31{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal1 8.7s linear;
+  animation-delay:34s
+}
+.diagonal-move32{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal2 8.7s linear;
+  animation-delay: 34.5s;
+}
+.diagonal-move33{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal3 8.7s linear;
+  animation-delay: 35s;
+}
+.diagonal-move34{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal4 8.7s linear;
+  animation-delay: 36s;
+}
+.diagonal-move35{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal5 8.7s linear;
+  animation-delay: 37s;
+}
+.diagonal-move36{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal6 8.7s linear;
+  animation-delay: 38s;
+}
+.diagonal-move37{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal7 8.7s linear;
+  animation-delay: 39s;
+}
+.diagonal-move38{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal8 8.7s linear;
+  animation-delay: 40s;
+}
+.diagonal-move39{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal9 8.7s linear;
+  animation-delay: 41s;
+}
+.diagonal-move40{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal10 8.7s linear;
+  animation-delay: 42s;
+}
+.diagonal-move41{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal1 8.7s linear;
+  animation-delay:42.5s
+}
+.diagonal-move42{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal2 8.7s linear;
+  animation-delay: 43s;
+}
+.diagonal-move43{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal3 8.7s linear;
+  animation-delay: 44s;
+}
+.diagonal-move44{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal4 8.7s linear;
+  animation-delay: 45s;
+}
+.diagonal-move45{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal5 8.7s linear;
+  animation-delay: 45.5s;
+}
+.diagonal-move46{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal6 8.7s linear;
+  animation-delay: 46s;
+}
+.diagonal-move47{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal7 8.7s linear;
+  animation-delay: 46.5s;
+}
+.diagonal-move48{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal8 8.7s linear;
+  animation-delay: 47s;
+}
+.diagonal-move49{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal9 8.7s linear;
+  animation-delay: 48s;
+}
+.diagonal-move50{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal10 8.7s linear;
+  animation-delay: 49s;
+}
+.diagonal-move51{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal1 8.3s linear;
+  animation-delay:50s
+}
+.diagonal-move52{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal2 8.3s linear;
+  animation-delay: 51.5s;
+}
+.diagonal-move53{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal3 8.3s linear;
+  animation-delay: 52s;
+}
+.diagonal-move54{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal4 8.3s linear;
+  animation-delay: 53s;
+}
+.diagonal-move55{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal5 8.3s linear;
+  animation-delay: 53.5s;
+}
+.diagonal-move56{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal6 8.3s linear;
+  animation-delay: 54s;
+}
+.diagonal-move57{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal7 8.3s linear;
+  animation-delay: 55s;
+}
+.diagonal-move58{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal8 8.3s linear;
+  animation-delay: 56s;
+}
+.diagonal-move59{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal9 8.3s linear;
+  animation-delay: 56.5s;
+}
+.diagonal-move60{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal10 8.3s linear;
+  animation-delay: 57s;
+}
+.diagonal-move61{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal1 8s linear;
+  animation-delay:58s
+}
+.diagonal-move62{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal2 8s linear;
+  animation-delay: 58.5s;
+}
+.diagonal-move63{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal3 8s linear;
+  animation-delay: 59s;
+}
+.diagonal-move64{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal4 8s linear;
+  animation-delay: 59.5s;
+}
+.diagonal-move65{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal5 8s linear;
+  animation-delay: 60s;
+}
+.diagonal-move66{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal6 8s linear;
+  animation-delay: 61s;
+}
+.diagonal-move67{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal7 8s linear;
+  animation-delay: 61.5s;
+}
+.diagonal-move68{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal8 8s linear;
+  animation-delay: 62s;
+}
+.diagonal-move69{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal9 8s linear;
+  animation-delay: 62.5s;
+}
+.diagonal-move70{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal10 8s linear;
+  animation-delay: 63s;
+}
+.diagonal-move71{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal1 7.7s linear;
+  animation-delay:64s
+}
+.diagonal-move72{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal2 7.7s linear;
+  animation-delay: 65s;
+}
+.diagonal-move73{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal3 7.7s linear;
+  animation-delay: 65.5s;
+}
+.diagonal-move74{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal4 7.73s linear;
+  animation-delay: 66s;
+}
+.diagonal-move75{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal5 7.7s linear;
+  animation-delay: 66.5s;
+}
+.diagonal-move76{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal6 7.7s linear;
+  animation-delay: 67s;
+}
+.diagonal-move77{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal7 7.7s linear;
+  animation-delay: 68s;
+}
+.diagonal-move78{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal8 7.7s linear;
+  animation-delay: 69s;
+}
+.diagonal-move79{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal9 7.7s linear;
+  animation-delay: 70s;
+}
+.diagonal-move80{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal10 7.7s linear;
+  animation-delay: 71s;
+}
+.diagonal-move81{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal1 7.7s linear;
+  animation-delay:72s
+}
+.diagonal-move82{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal2 7.7s linear;
+  animation-delay: 73s;
+}
+.diagonal-move83{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal3 7.7s linear;
+  animation-delay: 74s;
+}
+.diagonal-move84{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal4 7.73s linear;
+  animation-delay: 75s;
+}
+.diagonal-move85{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal5 7.7s linear;
+  animation-delay: 76s;
+}
+.diagonal-move86{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal6 7.7s linear;
+  animation-delay: 77s;
+}
+.diagonal-move87{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal7 7.7s linear;
+  animation-delay: 78s;
+}
+.diagonal-move88{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal8 7.7s linear;
+  animation-delay: 79s;
+}
+.diagonal-move89{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal9 7.7s linear;
+  animation-delay: 80s;
+}
+.diagonal-move90{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal10 7.7s linear;
+  animation-delay: 81s;
+}
+.diagonal-move91{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal1 7.3s linear;
+  animation-delay:82s
+}
+.diagonal-move92{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal2 7.3s linear;
+  animation-delay: 83s;
+}
+.diagonal-move93{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal3 7.3s linear;
+  animation-delay: 83.5s;
+}
+.diagonal-move94{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal4 7.3s linear;
+  animation-delay: 84s;
+}
+.diagonal-move95{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal5 7.3s linear;
+  animation-delay: 85s;
+}
+.diagonal-move96{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal6 7.3s linear;
+  animation-delay: 86s;
+}
+.diagonal-move97{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal7 7.3s linear;
+  animation-delay: 87s;
+}
+.diagonal-move98{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal8 7.3s linear;
+  animation-delay: 88s;
+}
+.diagonal-move99{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal9 7.3s linear;
+  animation-delay: 89s;
+}
+.diagonal-move100{
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  animation: moveDiagonal10 7.3s linear;
+  animation-delay: 90s;
+}
+
+.game-over {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  position:fixed; z-index:20;
+  left:0; right:0; top:0;
+  background-color: rgba(0, 0, 0, 0.6);
+  animation: curtain 0.6s ease-in;     
+  animation-delay: 30s; 
+  animation-fill-mode: forwards;
+  text-align: center;
+}
+.game-title{
+  font-size: 86pt;
+  margin:auto;
+}
+
+.to-menu-btn {
+  display: block;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 30pt;
+  cursor: pointer;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #4CAF50;
+}
+
+.button:hover {
+  background-color: #45a049;
+  border-color: #45a049; /* Set border color on hover */
+  cursor: pointer;
+}
+
+@keyframes curtain {
+  from{height:100vh; opacity:0;}
+  to {height:100vh; opacity:1;}
+}
+
+@keyframes moveDiagonal1{
+  0% {
+    top: -5%;
+    left: -5%;
+  }
+  25% {
+    top: 25%;
+    left: 25%;
+  }
+  50% {
+    top: 10%;
+    left: 30%;
+  }
+  75% {
+    top: 80%;
+    left: 90%;
+  }
+  100% {
+    top: 100%;
+    left: 100%;
+  }
+}
+
+@keyframes moveDiagonal2{
+  0% {
+    top: -5%;
+    left: 60%;
+  }
+  25% {
+    top: 50%;
+    left: 25%;
+  }
+  50% {
+    top: 10%;
+    left: 70%;
+  }
+  75% {
+    top: 80%;
+    left: 50%;
+  }
+  100% {
+    top: 100%;
+    left: 60%;
+  }
+}
+@keyframes moveDiagonal3{
+  0% {
+    top: 100%;
+    left: -5%;
+  }
+  25% {
+    top: 85%;
+    left: 20%;
+  }
+  50% {
+    top: 10%;
+    left: 40%;
+  }
+  75% {
+    top: 90%;
+    left: 80%;
+  }
+  100% {
+    top: 70%;
+    left: 100%;
+  }
+}
+@keyframes moveDiagonal4{
+  0% {
+    top: 100%;
+    left: 100%;
+  }
+  25% {
+    top: 70%;
+    left: 40%;
+  }
+  50% {
+    top: 30%;
+    left: 50%;
+  }
+  75% {
+    top: 30%;
+    left: 70%;
+  }
+  100% {
+    top: -20%;
+    left: 70%;
+  }
+}
+@keyframes moveDiagonal5{
+  0% {
+    top: 30%;
+    left: -5%;
+  }
+  25% {
+    top: 30%;
+    left: 50%;
+  }
+  50% {
+    top: 70%;
+    left: 10%;
+  }
+  75% {
+    top: 80%;
+    left: 40%;
+  }
+  100% {
+    top: 130%;
+    left: 80%;
+  }
+}
+@keyframes moveDiagonal6{
+  0% {
+    top: 105%;
+    left: 65%;
+  }
+  25% {
+    top: 60%;
+    left: 35%;
+  }
+  50% {
+    top: 60%;
+    left: 65%;
+  }
+  75% {
+    top: 40%;
+    left: 80%;
+  }
+  100% {
+    top: 50%;
+    left: 110%;
+  }
+}
+@keyframes moveDiagonal7{
+  0% {
+    top: -5%;
+    left: 50%;
+  }
+  25% {
+    top: 70%;
+    left: 30%;
+  }
+  50% {
+    top: 50%;
+    left: 70%;
+  }
+  75% {
+    top: 80%;
+    left: 90%;
+  }
+  100% {
+    top: 110%;
+    left: 70%;
+  }
+}
+@keyframes moveDiagonal8{
+  0% {
+    top: -5%;
+    left: 105%;
+  }
+  25% {
+    top: 50%;
+    left: 50%;
+  }
+  50% {
+    top: 35%;
+    left: 30%;
+  }
+  75% {
+    top: 35%;
+    left: 10%;
+  }
+  100% {
+    top: 50%;
+    left: -5%;
+  }
+}
+@keyframes moveDiagonal9{
+  0% {
+    top: 110%;
+    left: 50%;
+  }
+  25% {
+    top: 50%;
+    left: 70%;
+  }
+  50% {
+    top: 30%;
+    left: 60%;
+  }
+  75% {
+    top: 40%;
+    left: 90%;
+  }
+  100% {
+    top: 70%;
+    left: 110%;
+  }
+}
+@keyframes moveDiagonal10{
+  0% {
+    top: 20%;
+    left: -5%;
+  }
+  25% {
+    top: 30%;
+    left: 15%;
+  }
+  50% {
+    top: 50%;
+    left: 40%;
+  }
+  75% {
+    top: 10%;
+    left: 60%;
+  }
+  100% {
+    top: -10%;
+    left: 70%;
+  }
+}

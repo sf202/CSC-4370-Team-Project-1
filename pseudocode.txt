@@ -1,0 +1,30 @@
+BEGIN
+    
+    // Main program logic
+    WHILE (Quit == No)
+    DO
+        // Code to be executed repeatedly while the condition is true
+        
+        IF (Save World == Yes)
+        THEN
+			IF (Timer <100 sec )
+				THEN 
+					Add Points
+        ELSE
+            Game Over
+			Return to Main navigation
+        IF (How To Play == Yes)
+        THEN
+			Tutorial 
+			
+		 IF (High Performance == Yes)
+        THEN
+			Adjust Performance 
+        
+    END WHILE
+	IF (Quit == Yes)
+        THEN
+			End Game 
+    
+    
+END
